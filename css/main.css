@@ -1,1 +1,12 @@
-img {width: 100px;}
+header {
+    background:#00f;
+}
+main{
+    background: rgb(0, 255, 247);
+}
+section{
+    background:rgb(134, 136, 107);
+}
+footer{
+    background: rgb(255, 0, 0);
+}
