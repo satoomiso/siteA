@@ -1,12 +1,29 @@
 header {
-    background:#00f;
+  background: #00f;
 }
-main{
-    background: rgb(0, 255, 247);
+.logo img {
+  width: 40px;
 }
-section{
-    background:rgb(119, 122, 68);
+span.logo-title {
+  color: black;
+  font-size: 0.75rem;
+  /* line-height: 0.5; */
 }
-footer{
-    background: rgb(255, 0, 0);
+
+a.logo {
+  line-height: 0.5;
+  display: block;
+}
+
+.menu img {
+  width: 40px;
+}
+main {
+  background: rgb(0, 255, 247);
+}
+section {
+  background: rgb(119, 122, 68);
+}
+footer {
+  background: rgb(255, 0, 0);
 }
