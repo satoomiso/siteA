@@ -1,19 +1,33 @@
 header {
-  background: #00f;
 }
+
+.logo {
+  padding: 0.1rem;
+}
+
 .logo img {
   width: 40px;
 }
-span.logo-title {
+
+.logo-title {
   color: black;
   font-size: 0.75rem;
   line-height: 1;
+  padding: 0.25rem;
 }
 
 /* a.logo {
   line-height: 0.5;
   display: block;
 } */
+
+span.logo-title-text1 {
+  font-size: 0.65rem;
+}
+
+.call {
+  padding: 0.25rem;
+}
 
 .menu img {
   width: 40px;
