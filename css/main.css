@@ -7,13 +7,13 @@ header {
 span.logo-title {
   color: black;
   font-size: 0.75rem;
-  /* line-height: 0.5; */
+  line-height: 1;
 }
 
-a.logo {
+/* a.logo {
   line-height: 0.5;
   display: block;
-}
+} */
 
 .menu img {
   width: 40px;
