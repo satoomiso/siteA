@@ -1,5 +1,23 @@
+body {
+  line-height: 1.4;
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+}
+
+footer {
+  background: rgb(255, 0, 0);
+}
+
+li {
+  font-size: 0.7rem;
+}
+
 header {
   height: 40px;
+}
+
+.font-noto {
+  font-family: "Noto Serif JP", serif;
 }
 
 .logo {
@@ -12,7 +30,6 @@ header {
 }
 
 .logo-title {
-  font-family: "Noto Serif JP wght@700", serif;
   color: black;
   font-size: 0.75rem;
   line-height: 1;
@@ -101,31 +118,10 @@ span.logo-title-text1 {
   border-bottom: 0.05rem solid;
 }
 
-li {
-  font-size: 0.7rem;
-}
-
-.text-primary text-center {
-  font-family: "Noto Sherif JP", serif;
-}
-
-.font-weight-bold {
-  font-family: "Noto Sherif JP", serif;
-}
-
-.font-number {
-  font-family: "Noto Serif JP", serif;
-  font-size: 2rem;
-}
-
 .reason-01-title {
   font-family: "Noto Serif JP", serif;
   padding: 0.5rem 0;
   margin: 1rem 1rem;
   border-top: 0.05rem solid;
   border-bottom: 0.05rem solid;
-}
-
-footer {
-  background: rgb(255, 0, 0);
 }
