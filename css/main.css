@@ -1,5 +1,6 @@
 body {
   line-height: 1.4;
+  letter-spacing: 1.4;
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
     "Hiragino Sans", Meiryo, sans-serif;
 }
@@ -8,8 +9,13 @@ footer {
   background: rgb(255, 0, 0);
 }
 
+ul {
+  padding: 1rem 2rem;
+}
+
 li {
-  font-size: 0.7rem;
+  font-size: 0.61rem;
+  line-height: 3;
 }
 
 header {
@@ -56,9 +62,10 @@ span.logo-title-text1 {
 .consult_connect_text {
   color: white;
   font-family: "Noto Serif JP", serif;
+  letter-spacing: 0.15rem;
   margin: 0 auto;
   width: fit-content;
-  padding: 1rem 0 0 0;
+  padding: 1rem 0 0.5rem 0;
 }
 
 .consult_connect_links {
@@ -66,13 +73,14 @@ span.logo-title-text1 {
   width: fit-content;
 
   background-color: white;
-  padding: 0.5rem;
+  padding: 0 0.5rem 0.5rem 0.5rem;
 }
 
 .consult_connect_call {
   margin: 0 auto;
   width: fit-content;
   line-height: 1.7rem;
+  padding: 0.2rem 0 0.5rem 0;
 }
 
 .consult_connect_call_language {
@@ -104,10 +112,21 @@ span.logo-title-text1 {
   background-repeat: repeat-x;
 }
 
+.consult_connect2 {
+  background-image: url("../img/connect_sp_bg2.png");
+  padding-bottom: 1rem;
+  background-size: auto;
+  background-repeat: repeat-x;
+}
+
 .concern {
   background: url("../img/concern_bg.png") right top;
   background-size: cover;
   background-repeat: repeat-x;
+}
+
+.concern_title {
+  padding: 1rem;
 }
 
 .concern_subtitle {
@@ -118,10 +137,130 @@ span.logo-title-text1 {
   border-bottom: 0.05rem solid;
 }
 
+.reason {
+  background-image: url("../img/reason_bg.png");
+  background-repeat: repeat-x;
+  font-size: 0.8rem;
+}
+
+.font-eng-title {
+  font-size: 0.8rem;
+  padding: 2rem 1rem 1rem 1rem;
+}
+
+.font-jp-title {
+  font-size: 1.1rem;
+}
+
+.merit {
+  font-size: 1.4rem;
+}
+
+.reason-red {
+  font-size: 1.2rem;
+}
+
 .reason-01-title {
   font-family: "Noto Serif JP", serif;
+  font-size: 0.95rem;
   padding: 0.5rem 0;
-  margin: 1rem 1rem;
+  margin: 0.7rem;
   border-top: 0.05rem solid;
   border-bottom: 0.05rem solid;
+}
+
+.intro_subtitle {
+  color: #12274c;
+  margin: 1rem 0 0 2rem;
+}
+
+.intro_text {
+  font-size: 0.8rem;
+}
+
+.about_subtitle {
+  color: #12274c;
+  margin: 1rem 0 0 1rem;
+}
+
+.about_text {
+  font-size: 0.8rem;
+}
+
+ul.about {
+  background-color: #f8f8f8;
+  padding: 1rem 0 0.5rem 0;
+  margin: 1rem;
+}
+
+li.about {
+  font-size: 0.61rem;
+  line-height: 1.4;
+  padding: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.about_text_box {
+  background-color: #f8f8f8;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.flow_subtitle {
+  color: #12274c;
+  font-size: 1.1rem;
+}
+
+.flow_box {
+  background: #fafbfd;
+  border: 1px solid #e6e6e5;
+  padding: 1rem;
+  margin: 1rem;
+  position: relative;
+}
+
+.flow_box:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  background: #fafbfd;
+  border-top: 1px solid #e6e6e5;
+  border-left: 1px solid #e6e6e5;
+  width: 40px;
+  height: 40px;
+  transform: rotate(-135deg) skew(-10deg, -10deg);
+  z-index: 2;
+  bottom: -21px;
+}
+
+.flow_text {
+  font-size: 0.7rem;
+}
+
+.faq_subtitle {
+  color: #12274c;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+p.faq_text {
+  padding: 0 0 0 2rem;
+}
+
+p.office_text {
+  font-size: 0.8rem;
+}
+
+.office_subtitle {
+  color: #12274c;
+}
+
+.review_box {
+  width: 18rem; /* 横幅を200pxに指定 */
+  height: 18rem; /* 横幅を200pxに指定 */
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 0.2rem solid #cccccc; /* わかりやすくボーダーを引く */
+  overflow-y: scroll; /* 縦方向にスクロール可能にする */
 }
