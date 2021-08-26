@@ -1,12 +1,7 @@
 body {
   line-height: 1.4;
   letter-spacing: 1.4;
-  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans", Meiryo, sans-serif;
-}
-
-footer {
-  background: rgb(255, 0, 0);
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 ul {
@@ -20,6 +15,18 @@ li {
 
 header {
   height: 40px;
+  position: fixed; /*ヘッダー固定*/
+  width: 100%; /*ヘッダーの幅*/
+  top: 0; /*トップの（プラウザの）余白*/
+  left: 0; /*左の（プラウザの）余白*/
+  border-bottom: 1px solid #f5f5f5; /*ヘッダー下線*/
+  background-color: white; /*背景色*/
+  z-index: 500;
+}
+
+main {
+  margin-top: 55px;
+  z-index: 0;
 }
 
 .font-xs {
@@ -322,8 +329,8 @@ span.logo-title-text1 {
 
 .review_box {
   background-color: white;
-  width: 17rem; /* 横幅を200pxに指定 */
-  height: 17rem; /* 横幅を200pxに指定 */
+  width: 17rem; /* 横幅を指定 */
+  height: 17rem; /* 横幅を指定 */
   margin: 1rem auto;
   padding: 1rem;
   border: 0.2rem solid #cccccc; /* わかりやすくボーダーを引く */
@@ -332,4 +339,32 @@ span.logo-title-text1 {
 
 .contact {
   background: #1c81e6;
+  padding-bottom: 1rem;
+}
+
+.col-form-label {
+  background-color: #dbeaf0;
+  border-top: 0.05rem solid #cccccc;
+  border-bottom: 0.05rem solid #cccccc;
+
+  margin: 0 0 0.5rem 0;
+}
+
+.footer_logo {
+  display: block;
+  margin: 1rem 2rem 1rem 4rem;
+}
+
+.footer_logo img {
+  width: 40px;
+  margin: 0.2rem 0 0 0.2rem;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ccc;
+  display: block;
+  margin-top: 10px;
+  letter-spacing: 0.1em;
 }
