@@ -107,15 +107,17 @@ span.logo-title-text1 {
   padding: 0.2rem 0 0.5rem 0;
 }
 
+.consult_connect_call a {
+  color: #000;
+}
+
 .consult_connect_call_language {
-  color: #12274c;
   font-size: 0.5rem;
   padding: 0.1rem;
   border: solid 0.02rem;
 }
 
 .consult_connect_call_number {
-  color: #12274c;
   font-size: 2rem;
   font-family: serif;
 }
