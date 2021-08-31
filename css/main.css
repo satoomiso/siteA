@@ -14,7 +14,7 @@ li {
 }
 
 header {
-  height: 40px;
+  height: 50px;
   position: fixed; /*ヘッダー固定*/
   width: 100%; /*ヘッダーの幅*/
   top: 0; /*トップの（プラウザの）余白*/
@@ -97,14 +97,14 @@ span.logo-title-text1 {
   width: fit-content;
 
   background-color: white;
-  padding: 0 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
 
 .consult_connect_call {
   margin: 0 auto;
   width: fit-content;
   line-height: 1.7rem;
-  padding: 0.2rem 0 0.5rem 0;
+  padding: 0 0 0.5rem 0;
 }
 
 .consult_connect_call a {
@@ -133,6 +133,7 @@ span.logo-title-text1 {
 
 .consult_connect {
   background-image: url("../img/connect_sp_bg.png");
+
   padding-bottom: 1rem;
   background-size: cover;
   background-repeat: repeat-x;
@@ -153,7 +154,7 @@ span.logo-title-text1 {
 }
 
 .concern {
-  background: url("../img/concern_bg.png") right top;
+  background: url("../img/concern_bg_pc.png") right top;
   background-size: cover;
   background-repeat: repeat-x;
 }
@@ -175,7 +176,9 @@ span.logo-title-text1 {
 }
 
 .reason {
-  background-image: url("../img/reason_bg.png");
+  background-image: url("../img/reason_bg_pc.png");
+  background-position: 75% 50%; /* 画像中央を起点に表示 */
+  background-size: cover; /* 縦横比を維持しながら全体を覆うように表示 */
   background-repeat: repeat-x;
   font-size: 0.8rem;
 }
@@ -331,7 +334,7 @@ span.logo-title-text1 {
 
 .review_box {
   background-color: white;
-  width: 17rem; /* 横幅を指定 */
+  width: 80%; /* 横幅を指定 */
   height: 17rem; /* 横幅を指定 */
   margin: 1rem auto;
   padding: 1rem;
