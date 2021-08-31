@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" charset="UTF-8"></script>
+    <title>フォーム</title>
+  </head>
+  <body>
+    <p>
+      <h2>メール送信フォーム</h2>
+    </p>
+    <div class="mail-link">
+      <a href="mailto:mail@sample.com" id="sendmail">メールを送る</a>
+    </div>
+    <form action="./confirm.php" method="post">
+      <p>
+        送信先
+      </p>
+      <input type="text" name="to">
+      <p>
+        メールのタイトル
+      </p>
+      <input type="text" name="title">
+      <p>
+        本文
+      </p>
+      <textarea name="content" cols="50" rows="5"></textarea>
+      <p>
+        本文2
+      </p>
+      <textarea name="content2" cols="50" rows="5"></textarea>
+      <p>
+        <input type="submit" name="send" value="送信">
+      </p>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/jquery.mailto.js"></script>
+    <script>
+      $(function(){
+        $('#sendmail').on('click', function(){
+        var body = '';
+        body += '本文' + $('[name="content"]').val() + '\r\n';
+        body += '本文2' + $('[name="content2"]').val() + '\r\n';
+        $.mailto.call({
+            to : $('[name="to"]').val(),
+            subject : $('[name="title"]').val(),
+            body : body
+        });
+      });
+    });
+    </script>
+  </body>
+</html>

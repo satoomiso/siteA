@@ -44,7 +44,7 @@
               <a href="tel:+213-446-2495">
                 <span class="consult_connect_call_language">日本語対応可</span>
                 <br />
-                <span class="consult_connect_call_number">（２１３）４４６ー２４９５</span>
+                <span class="consult_connect_call_number">(213)446-2495</span>
               </a>
             </div>
             <div class="ml-md-2">
@@ -569,26 +569,26 @@
           <div class="bg-white m-2">
             <div class="row mx-0 mb-2">
               <div class="col-form-label col-12"><span class="badge badge-danger mr-2">必須</span><span>お名前</span></div>
-              <div class="col"><input type="text" class="form-control bg-light" /></div>
+              <div class="col"><input name="yourname" type="text" class="form-control bg-light" /></div>
             </div>
 
             <div class="row mx-0 mb-2">
               <div class="col-form-label col-12"><span class="badge badge-danger mr-2">必須</span><span>電話番号</span></div>
-              <div class="col"><input type="text" class="form-control bg-light" /></div>
+              <div class="col"><input name="tel" type="text" class="form-control bg-light" /></div>
             </div>
 
             <div class="row mx-0 mb-2">
               <div class="col-form-label col-12">Eメールアドレス</div>
-              <div class="col"><input type="text" class="form-control bg-light" /></div>
+              <div class="col"><input name="email" type="text" class="form-control bg-light" /></div>
             </div>
 
             <div class="row mx-0 mb-2">
               <div class="col-form-label col-12">ご相談内容</div>
-              <div class="col"><textarea class="form-control bg-light mb-2"></textarea></div>
+              <div class="col"><textarea name="consult" class="form-control bg-light mb-2"></textarea></div>
             </div>
           </div>
 
-          <button type="submit" class="btn btn-danger d-flex mx-auto">送信</button>
+          <button id="sendmail" class="btn btn-danger d-flex mx-auto">メールを起動して送信してください</button>
         </form>
       </section>
     </main>
@@ -604,5 +604,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/jquery.mailto.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
