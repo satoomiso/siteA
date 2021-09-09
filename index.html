@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
   </head>
 
   <body>
@@ -22,7 +23,7 @@
         <div class="font-noto logo-title"><span class="logo-title-text1">カリフォルニア州交通専門</span><br /><span class="logo-title-text2">ジェフ・ヨウ法律事務所</span></div>
       </a>
       <div class="align-items-center d-flex ml-auto">
-        <a class="font-noto font-xl font-weight-bold m-5" href="tel:213-446-2495">(213)446-2495</a>
+        <a class="font-noto font-xl font-weight-bold" href="tel:213-446-2495">(213)446-2495</a>
       </div>
     </header>
 
@@ -565,7 +566,7 @@
           <div class="font-jp-title font-noto font-weight-normal font-xl text-white text-center">お問い合わせ</div>
         </h3>
 
-        <form>
+        <form method="post">
           <div class="bg-white m-2">
             <div class="row mx-0 mb-2">
               <div class="col-form-label col-12"><span class="badge badge-danger mr-2">必須</span><span>お名前</span></div>
@@ -584,11 +585,11 @@
 
             <div class="row mx-0 mb-2">
               <div class="col-form-label col-12">ご相談内容</div>
-              <div class="col"><textarea name="consult" class="form-control bg-light mb-2"></textarea></div>
+              <div class="col"><textarea name="consult" class="form-control bg-light mb-2" rows="8"></textarea></div>
             </div>
           </div>
 
-          <button id="sendmail" class="btn btn-danger d-flex mx-auto">メールを起動して送信してください</button>
+          <button id="sendmail" class="btn btn-danger d-flex mx-auto">メールが起動します</button>
         </form>
       </section>
     </main>
