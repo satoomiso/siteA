@@ -575,7 +575,11 @@
 
             <div class="row mx-0 mb-2">
               <div class="col-form-label col-12"><span class="badge badge-danger mr-2">必須</span><span>電話番号</span></div>
-              <div class="col"><input name="tel" type="text" required="required" class="form-control bg-light" /></div>
+              <div class="col">
+                <input name="tel" type="text" required="required" class="form-control bg-light" />
+                <div class="error_msg text-danger d-none" id="tel_error_msg">正しい電話番号を入力してください</div>
+                <span class="small">※半角英数字しか入力できません</span>
+              </div>
             </div>
 
             <div class="row mx-0 mb-2">
